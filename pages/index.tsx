@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export const sections = ["skills", "educations", "works", "projects", "extras"]
 
@@ -26,83 +27,75 @@ export default function Home() {
           <p className="w-3/4">
             This is my portfolio page about the projects that I have
             been working on for the last couple of years, any follow-ups
-            please contact via whichever way more helpful to you, and I'll
+            please contact via whichever way more helpful to you, and Ill
             try to respond in the order the inqueries was received.
           </p>
           {/* <p>alpha-numero-uno@hotmail.com</p> */}
           <div style={{ display: "flex", flexDirection: "row", gap: 20 }}>
-            <button><img src="/phone.svg" className="w-10" /></button>
-            <button><img src="/email.svg" className="w-10" /></button>
-            <button><img src="/twitter.svg" className="w-10" /></button>
+            <button><Image src={'/phone.svg'} alt="phone.svg" width={36} height={36} /></button>
+            <button><Image src={'/email.svg'} alt="email.svg" width={36} height={36} /></button>
+            <button><Image src={'/twitter.svg'} alt="twitter.svg" width={36} height={36} /></button>
           </div>
         </div>
 
         <br />
+          <div id="split-1">
+            <div>
+                <Image src={'/images/yugio/OIP.jpeg'} alt="OIP" width={450} height={200}/>
+              <section className='bg-blue-200 p-10'>
+                <button className="font-bold text-2xl text-gray-500">Skills</button>
 
-          <div>
-            <img src="/images/vinh/OIP.jpeg" />
-            <section id={sections[0]} className='bg-blue-200 p-10' >
-              {/* <button className="font-bold text-2xl text-gray-500">Skills</button> */}
+                <ul>
+                  <li>Programming Fullstack</li>
+                  <li>Project Management</li>
+                  <li>Financing Real Eastate</li>
+                  <li>Organic Augmentations</li>
+                  <li>Animal Control</li>
+                </ul>
+              </section>
+            </div>
+            <br />
+            <div>
+                <Image src={'/images/yugio/OIP.jpeg'} alt="OIP" width={450} height={200}/>
+              <section className='bg-blue-200 p-10'>
+                <button className="font-bold text-2xl text-gray-500">Education</button>
 
-              <ul>
-                <li>Programming Fullstack</li>
-                <li>Project Management</li>
-                <li>Financing Real Eastate</li>
-                <li>Organic Augmentations</li>
-                <li>Animal Control</li>
-              </ul>
-            </section>
+                <ul>
+                  <li>University of Washington | 2022</li>
+                  <li>Bellevue College | 2020</li>
+                  <li>LIndbergh Heigh School 2019</li>
+                  <li>Nguyen Du Middle School</li>
+                  <li>Nguyen Hue Elementary</li>
+                </ul>
+              </section>
+            </div>
+            <br />
           </div>
-
-          <br />
-
-
+         
+         <div id='split-2'>
           <div>
-            <img src="/images/vinh/OIP2.jpeg" />
-            <section id={sections[1]} className='bg-blue-200 p-10'>
-              {/* <button className="font-bold text-2xl text-gray-500">Education</button> */}
-
-              <ul>
-                <li>University of Washington | 2022</li>
-                <li>Bellevue College | 2020</li>
-                <li>LIndbergh Heigh School 2019</li>
-                <li>Nguyen Du Middle School</li>
-                <li>Nguyen Hue Elementary</li>
-              </ul>
-            </section>
-          </div>
-
-          <br />
-
-          <div>
-            <img src="/images/vinh/OIP3.jpeg" />
-            <section id={sections[2]} className='bg-blue-200 p-10'>
-              {/* <button className="font-bold text-2xl text-gray-500">Work Experience</button> */}
-
+              <Image src={'/images/yugio/OIP.jpeg'} alt="OIP" width={450} height={200}/>
+            <section className='bg-blue-200 p-10'>
+              <button className="font-bold text-2xl text-gray-500">Work Experience</button>
               <ul>
                 <li>Sunbytes Global | 2024-Present</li>
-
                 <li>Dalat Hasfarm | 2023-2024 </li>
               </ul>
             </section>
           </div>
-
           <br />
-
           <div>
-            <img src="/images/vinh/OIP4.jpeg" />
-            <section id={sections[3]} className='bg-blue-200 p-10'>
-              {/* <button className="font-bold text-2xl text-gray-500">Projects</button> */}
+              <Image src={'/images/yugio/OIP.jpeg'} alt="OIP" width={450} height={200}/>
+            <section className='bg-blue-200 p-10'>
+              <button className="font-bold text-2xl text-gray-500">Projects</button>
               <p>Given on inqueries</p>
             </section>
           </div>
-
           <br />
-
           <div>
-            <img src="/images/vinh/OIP5.png" />
-            <section id={sections[4]} className='bg-blue-200 p-10'>
-              {/* <button className="font-bold text-2xl text-gray-500">Extracurricular</button> */}
+              <Image src={'/images/yugio/OIP.jpeg'} alt="OIP" width={450} height={200}/>
+            <section className='bg-blue-200 p-10'>
+              <button className="font-bold text-2xl text-gray-500">Extracurricular</button>
               <p>Music</p>
               <p>Cigars + Whiskey</p>
               <p>Painting</p>
@@ -110,7 +103,7 @@ export default function Home() {
               <p>Travelling</p>
             </section>
           </div>
-
+         </div>
         </div>
       </div>
       );

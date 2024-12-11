@@ -3,9 +3,9 @@ import React from 'react'
 import utilStyles from '@/styles/Utils.module.css'
 import { sections } from '@/pages';
 
-type NavbarProps = any;
+// type NavbarProps = any;
 
-const Navbar = (props: NavbarProps) =>  {
+const Navbar = () =>  {
   return( 
       <div>
           <ul>
